@@ -6,29 +6,27 @@ import {
   SET_TODO_DONE
 } from '../actions'
 
-function todos(state = [], action) {
+function todos(todos = [], action) {
   let newTodos
 
   switch (action.type) {
     case ADD_TODO:
-      newTodos = state.slice()
-      newTodos.push(action.todo)
-      return newTodos
+      return [...todos, action.todo]
 
     case SET_TODO_DONE:
-      newTodos = state.slice()
+      newTodos = todos.slice()
       newTodos[action.index].done = action.done
       return newTodos
 
     case SWAP_TODOS:
-      newTodos = state.slice()
+      newTodos = todos.slice()
       var tmp = newTodos[action.index1]
       newTodos[action.index1] = newTodos[action.index2]
       newTodos[action.index2] = tmp
       return newTodos
 
     default:
-      return state
+      return todos
   }
 }
 

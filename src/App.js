@@ -3,6 +3,7 @@ import { injectGlobal } from 'styled-components'
 import TodoList from './TodoList'
 import AddTodoForm from './AddTodoForm'
 
+// eslint-disable-next-line no-unused-expressions
 injectGlobal`
   html {
     color: #292f33;
