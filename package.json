@@ -23,11 +23,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
-    "lint": "prettier --no-semi --write \"src/**/*.js\""
+    "lint": "prettier --single-quote --no-semi --write \"src/**/*.js\""
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write --no-semi",
+      "prettier --single-quote --no-semi --write",
       "git add"
     ]
   }

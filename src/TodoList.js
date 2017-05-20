@@ -1,9 +1,9 @@
-import React from "react"
-import { connect } from "react-redux"
-import { swapTodos } from "./actions"
-import Todo from "./Todo"
-import styled from "styled-components"
-import { SortableContainer, SortableElement } from "react-sortable-hoc"
+import React from 'react'
+import { connect } from 'react-redux'
+import { swapTodos } from './actions'
+import Todo from './Todo'
+import styled from 'styled-components'
+import { SortableContainer, SortableElement } from 'react-sortable-hoc'
 
 const List = styled.div`
   &:hover {

@@ -1,8 +1,8 @@
-import React from "react"
-import { bindActionCreators } from "redux"
-import { connect } from "react-redux"
-import styled from "styled-components"
-import { setTodoDone } from "./actions"
+import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { setTodoDone } from './actions'
 
 const Container = styled.div`
   font-size: 32px;
@@ -21,7 +21,7 @@ const Input = styled.input`
 
 const Title = styled.a`
   color: black;
-  text-decoration: ${props => (props.done ? "line-through" : "none")};
+  text-decoration: ${props => (props.done ? 'line-through' : 'none')};
 `
 
 export const Todo = ({ id, title, done, setTodoDone }) => (

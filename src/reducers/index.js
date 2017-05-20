@@ -1,10 +1,10 @@
-import { combineReducers } from "redux"
+import { combineReducers } from 'redux'
 import {
   ADD_TODO,
   SET_INSERTING_TODO_TITLE,
   SWAP_TODOS,
   SET_TODO_DONE
-} from "../actions"
+} from '../actions'
 
 function todos(state = [], action) {
   let newTodos
@@ -35,7 +35,7 @@ function todos(state = [], action) {
 function activeTodo(state = {}, action) {
   switch (action.type) {
     case ADD_TODO:
-      return { title: "" }
+      return { title: '' }
 
     case SET_INSERTING_TODO_TITLE:
       return { title: action.title }

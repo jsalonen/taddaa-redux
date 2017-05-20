@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import { bindActionCreators } from "redux"
-import { connect } from "react-redux"
-import styled from "styled-components"
-import { addTodo, setInsertingTodoTitle } from "./actions"
+import React, { Component } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { addTodo, setInsertingTodoTitle } from './actions'
 
 const Container = styled.div`
 `
@@ -23,7 +23,7 @@ export class AddTodoForm extends Component {
   }
 
   titleKeyPress = evt => {
-    if (evt.key === "Enter") {
+    if (evt.key === 'Enter') {
       this.props.addTodo(this.props.title)
     }
   }

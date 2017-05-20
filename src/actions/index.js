@@ -1,7 +1,7 @@
-export const ADD_TODO = "ADD_TODO"
-export const SET_INSERTING_TODO_TITLE = "SET_ACTIVE_TODO_TITLE"
-export const SWAP_TODOS = "SWAP_TODOS"
-export const SET_TODO_DONE = "SET_TODO_DONE"
+export const ADD_TODO = 'ADD_TODO'
+export const SET_INSERTING_TODO_TITLE = 'SET_ACTIVE_TODO_TITLE'
+export const SWAP_TODOS = 'SWAP_TODOS'
+export const SET_TODO_DONE = 'SET_TODO_DONE'
 
 export function addTodo(title) {
   return { type: ADD_TODO, todo: { done: false, title: title } }
