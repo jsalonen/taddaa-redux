@@ -1,10 +1,15 @@
-import { combineReducers } from 'redux'
-import { ADD_TODO, SET_INSERTING_TODO_TITLE, SWAP_TODOS, SET_TODO_DONE } from '../actions'
+import { combineReducers } from "redux"
+import {
+  ADD_TODO,
+  SET_INSERTING_TODO_TITLE,
+  SWAP_TODOS,
+  SET_TODO_DONE
+} from "../actions"
 
 function todos(state = [], action) {
-  let newTodos;
+  let newTodos
 
-  switch(action.type) {
+  switch (action.type) {
     case ADD_TODO:
       newTodos = state.slice()
       newTodos.push(action.todo)
@@ -28,18 +33,18 @@ function todos(state = [], action) {
 }
 
 function activeTodo(state = {}, action) {
-  switch(action.type) {
+  switch (action.type) {
     case ADD_TODO:
-      return { title: '' }
+      return { title: "" }
 
-  	case SET_INSERTING_TODO_TITLE:
+    case SET_INSERTING_TODO_TITLE:
       return { title: action.title }
 
-  	default:
+    default:
       return state
   }
 }
 
-const reducers = combineReducers({todos, activeTodo})
+const reducers = combineReducers({ todos, activeTodo })
 
 export default reducers
