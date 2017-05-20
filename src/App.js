@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { injectGlobal } from 'styled-components';
-import TodoList from './TodoList'
-import AddTodoForm from './AddTodoForm'
+import React, { Component } from "react"
+import { injectGlobal } from "styled-components"
+import TodoList from "./TodoList"
+import AddTodoForm from "./AddTodoForm"
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
@@ -14,7 +14,7 @@ injectGlobal`
   a {
     text-decoration: none;
   }
-`;
+`
 
 export class App extends Component {
   render() {
@@ -27,4 +27,4 @@ export class App extends Component {
   }
 }
 
-export default App;
+export default App
